@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Cone Deck for GPT",
+  "version": "1.0.0",
+  "description": "Navigate long chats, organize conversations into folders, and archive them with ease. Made by conelab.ai.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "content.js",
+        "navigator.js",
+        "organizer.js"
+      ],
+      "css": [
+        "panel.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

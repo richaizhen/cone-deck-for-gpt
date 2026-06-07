@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Local tooling / editor config
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# Logs / temp
+*.log
+node_modules/
